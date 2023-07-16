@@ -1,0 +1,8 @@
+.terraform/
+.vscode/
+.terraform.lock.hcl
+terraform.plan
+terraform.tfvars
+.terraform.tfstate.lock.info
+terraform.tfstate
+terraform.tfstate.backup
