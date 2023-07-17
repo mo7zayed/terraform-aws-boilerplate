@@ -22,3 +22,8 @@ variable "private_subnets" {
 variable "database_subnets" {
   default = ["10.0.100.0/24", "10.0.101.0/24"]
 }
+
+variable "bastion_instance_type" {
+  type    = string
+  default = "t3.micro"
+}
