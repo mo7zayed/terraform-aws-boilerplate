@@ -6,7 +6,7 @@ variable "env" {}
 
 variable "global_tags" {}
 
-variable "bastion_instance_type" {
+variable "alb_instance_type" {
   type    = string
   default = "t3.micro"
 }
@@ -23,6 +23,10 @@ variable "vpc_id" {
   type = string
 }
 
-variable "subnet_id" {
-  type = string
+variable "public_subnets" {
+  type = list(string)
+}
+
+variable "private_subnets" {
+  type = list(string)
 }

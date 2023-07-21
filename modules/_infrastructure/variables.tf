@@ -27,3 +27,16 @@ variable "bastion_instance_type" {
   type    = string
   default = "t3.micro"
 }
+
+variable "alb_instance_type" {
+  type    = string
+  default = "t3.micro"
+}
+
+variable "default_ami_id" {
+  type = string
+}
+
+variable "key_name" {
+  type = string
+}

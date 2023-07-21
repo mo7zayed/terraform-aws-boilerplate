@@ -34,12 +34,12 @@ module "bastion-server" {
 
 
   name                        = "${var.project}-${var.env}-bastion-server"
-  ami                         = data.aws_ami.ubuntu_22_04_ami.id
+  ami                         = var.default_ami_id
   instance_type               = var.bastion_instance_type
   subnet_id                   = var.subnet_id
   associate_public_ip_address = true
   vpc_security_group_ids      = [aws_security_group.bastion_sg.id]
-  #   key_name                    = "mo7zayed-root-us-east-1"
+  key_name                    = var.key_name
   #   monitoring                  = true
 
   # Tags

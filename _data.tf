@@ -1,4 +1,4 @@
-data "aws_ami" "ubuntu_22_04_ami" {
+data "aws_ami" "ec2_instance_ami" {
   most_recent = true
   owners      = ["099720109477"] # Canonical
   filter {
